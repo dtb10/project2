@@ -1,0 +1,17 @@
+<a href= "/">Home</a>
+<hr/>
+
+<!--this shows the content from the res.render.
+including the title, outcome and the image.-->
+
+{{#each content}}
+ <h2>{{title}}</h2>
+    <h2>{{outcome}}</h2>
+    {{#if image_url}}
+    <img alt="image_url" src="{{image_url}}"/>
+    {{else}}
+    <p>No image </p>
+    {{/if}}
+    <hr/>
+    {{/each}}
+    
